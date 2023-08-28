@@ -332,4 +332,10 @@
         justify-content: center;
         flex-direction: column;
     }
+    .page-container{
+        width: 85vw;
+    }
+    .display-task{
+        width: 85vw;
+    }
 }
