@@ -6,14 +6,15 @@
     box-sizing: border-box;
     font-family: sans-serif, "Poppins";
 }
-
+body{
+    background-color: wheat;
+}
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    background-color: wheat;
     gap: 30px;
 }
 
@@ -116,8 +117,11 @@
 }
 
 .bottom-right {
-    font-size: .8rem;
+    font-size: .7rem;
     color: white;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 
 @keyframes right {
@@ -325,17 +329,18 @@
     color: #364F6B;
 }
 
-@media screen and (max-width:728px) {
+@media screen and (max-width:650px) {
     .container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        width: 100vw;
     }
     .page-container{
-        width: 85vw;
+        max-width: 85vw;
     }
     .display-task{
-        width: 85vw;
+        max-width: 85vw;
     }
 }
